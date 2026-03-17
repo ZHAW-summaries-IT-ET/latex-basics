@@ -10,7 +10,7 @@ good luck with your exams!
 
 ## LateX Setup
 I use vscode, so good luck figuring this out if you're using smth different. In vscode install the following extension:
-- James-Yu.latex-workshop
+- James-Yu.latex-workshop (details: https://github.com/James-Yu/LaTeX-Workshop/wiki)
 
 I recommend using some kind of installation manager (in general) so yeah, hopefully you know what that is. 
 - install python3
@@ -24,6 +24,9 @@ now for windows:
 for ubuntu:
 - this should probably work: https://nevalsar.hashnode.dev/compiling-latex-with-ubuntu-and-visual-studio-code
 - or else maybe this: https://iggyrrieta.medium.com/using-latex-on-visual-studio-code-eea538d69d90
+
+### JSON settings
+*coming soon*
 
 ## Cloning the repository
 Now clone the repo you wanna work on (**make sure that this repo is a submodule!!!** help: https://git-scm.com/book/en/v2/Git-Tools-Submodules)
