@@ -25,12 +25,32 @@ for ubuntu:
 - this should probably work: https://nevalsar.hashnode.dev/compiling-latex-with-ubuntu-and-visual-studio-code
 - or else maybe this: https://iggyrrieta.medium.com/using-latex-on-visual-studio-code-eea538d69d90
 
-## Actually working on a LateX Summary
+## Cloning the repository
 Now clone the repo you wanna work on (**make sure that this repo is a submodule!!!** help: https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+### for existing repos
+```bash
+git clone --recurse-submodules <link to the repo>
+```
+
+**OR** (if you forgot to add --recurse-submodule and already cloned the repo)
+- open in vscode
+- open new terminal (easier than navigating there imo, but just do whatever you want)
+```bash
+git submodule init
+git submodule update
+```
+
+**!! DO NOT EDIT THE LATEX-BASICS FILES OR ATTEMPT TO PUSH CHANGES !!**
+(i WILL find you)
+
+## Actually working on a LateX Summary
 
 and now if you're in the main.tex file of any LateX project you should be able to build the pdf by pressing run (the little green triangle in the top right corner, and if you want to build & view the pdf press the page icon with the little magnifying glass).
 
 Whenever you save a LateX file, it will automatically rebuild the pdf. Look at the existing LateX projects to see how a main.tex file should be setup (best examples in folder 4th Semester). The pdf can be found in the "output" folder.
 
 If you want to past images use ctrl + shift + V. This will (should) automatically add the image to the repo.
+
+**If you don't understand something, there's a good chance that looking at the files in the example folder will help!**
 
