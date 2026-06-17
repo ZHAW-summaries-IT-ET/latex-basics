@@ -15,14 +15,17 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english, ngerman]{babel}
 \usepackage[T1]{fontenc}
+\usepackage{iftex}
 
 \newcommand{\oq}{«}
 \newcommand{\cq}{»}
 
 %"normal" text font:
 \usepackage{lmodern} 
-% hehe emojis
-\usepackage{emoji}
+% hehe emojis (LuaTeX only)
+\ifluatex
+  \usepackage{emoji}
+\fi
 
 %for code snippets use this:
 %{\fontfamily{cmtt}\selectfont "code you want in different font" }

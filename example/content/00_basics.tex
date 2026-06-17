@@ -4,7 +4,7 @@
 
 \mult{2}
 
-\begin{definition}{Definition Title}\\
+\begin{definition}{Definition Title}
     This is a definition.
     \begin{itemize}
         \item This is an itemized list
@@ -13,25 +13,27 @@
     \important{this is an important note}
 \end{definition}
 
-\begin{concept}{Concept Title}\\
-    This is a concept. This describes more general concepts and ideas.
+\begin{concept}{Concept Title}
+    This is a concept. This describes more general concepts and ideas. NOT EVERYTHING IS A CONCEPT THOUGH!
     \begin{itemize}
         \item two lists usually fit next to each other
         \item use the custom command mult for that 
     \end{itemize}
+    Please also use other box types, to make the summary more readable. If too many boxes of the same type (aka the same colour) are on one page, it becomes very messy.
+    So concepts should be the BASE concepts, further explanations/details or subconcepts should be theorems or corollaries, or sometimes just definitions.
 \end{concept}
 
 \multend 
 
-\begin{lemma}{Lemma Title}\\
+\begin{lemma}{Lemma Title}
     This is a lemma. Here we state proven facts that are used in the context of a theorem or corollary.
 \end{lemma}
 
-\begin{theorem}{Theorem Title}\\
+\begin{theorem}{Theorem Title}
     This is a theorem. Also use this for certain explanations that are more on the mathematical side, even if they are not theorems.
 \end{theorem}
 
-\begin{corollary}{Corollary Title}\\
+\begin{corollary}{Corollary Title}
     This is a corollary. Also use this for certain explanations that are more on the mathematical side, even if they are not corollaries. 
     Especially in context to a theorem block above, this adds further information or explanations.
     \begin{enumerate}
@@ -40,14 +42,14 @@
     \end{enumerate}
 \end{corollary}
 
-\begin{concept}{Rules of Thumb}\\
+\begin{theorem}{Rules of Thumb}
     This is a concept. Here we can state rules of thumb or general guidelines.
     \begin{itemize}
         \item This is an itemized list
         \item Should provide a concise explanation
         \item e.g. Vorgehensweisen
     \end{itemize}
-\end{concept}
+\end{theorem}
 
 \begin{remark}
     This is a remark. Here we can state additional information or comments. no title required.
@@ -57,11 +59,11 @@
     this is a simple example. no title required.
 \end{example}
 
-\begin{example2}{Example Title}\\
+\begin{example2}{Example Title}
     this is a more complex example. title required.
 \end{example2}
 
-\begin{example2}{Example Title}\\
+\begin{example2}{Example Title}
     One can achieve better readability by seperating the task definition (exercise)
     \tcblower
     from the solution (solution).
@@ -73,25 +75,25 @@
 %blocks belonging to the same topic can be grouped together and displayed in two columns using mult
 \mult{2}
 
-\begin{definition}{Topic A}\\
+\begin{definition}{Topic A}
     this is a definition regarding topic A.
 \end{definition}
 
-\begin{concept}{Topic A}\\
+\begin{concept}{Topic A}
     this is a concept regarding topic A.
 \end{concept}
 
-\begin{theorem}{Topic A}\\
-    this is a theorem regarding topic A.
+\begin{theorem}{Topic A}
+    this is a theorem regarding topic A. Or a subconcept/conclusion from the concept above.
 \end{theorem}
 
-\begin{corollary}{Topic A}\\
-    this is a corollary regarding topic A.
+\begin{corollary}{Topic A}
+    this is a corollary regarding topic A. Or some details on the concept above.
 \end{corollary}
 
 \multend
 
-\begin{example2}{Example Topic A}\\
+\begin{example2}{Example Topic A}
     this is an example regarding topic A.
 
     Examples are usually a bit longer, so they should be displayed in a single column.
@@ -116,7 +118,9 @@
     \\
     \includegraphics[width=\linewidth]{binomtrick.png}
     \\
-    before and after an image, we need to add a new line manually. 
+    before and after an image, we need to add a new line manually. unless there is nothing below it.
+    \\
+    \includegraphics[width=\linewidth]{binomtrick.png}
 \end{definition}
 
 \begin{remark}
@@ -182,7 +186,7 @@
 
 \subsection{Formulas and KR}
 
-\begin{formula}{Formula Title}\\
+\begin{formula}{Formula Title}
 This is a formula. This should be used for very important formulas and concepts that can be simplified into a step-by-step process.
 
     Short formula:
@@ -196,7 +200,7 @@ This is a formula. This should be used for very important formulas and concepts 
     do not use the \texttt{equation} environment, as I prefer working with \$ and \$\$ for inline and block formulas.
 \end{formula}
 
-\begin{formula}{Formula Title}\\
+\begin{formula}{Formula Title}
     In formulas, we have LateX functions that are used to create nice looking formulas.
     examples:
     \vspace{1mm}\\
@@ -247,16 +251,19 @@ This is a formula. This should be used for very important formulas and concepts 
     $$\begin{vsmallmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{vsmallmatrix}$$ is a matrix with 2 rows and 3 columns, but it is displayed in a different way.
 \end{formula}
 
-\begin{KR}{KR Title}\\
+\begin{KR}{KR Title}
     This is a KR. This "Kochrezept" is a recipe for a specific exercise type. It should be used for very important recipes and concepts.
-    \paragraph{First step}
+
+    \textbf{First step}
     This is the first step of the recipe.
     \begin{itemize}
         \item Paragraphs are used to achieve coarse-grained separation of the steps.
         \item Lists within the paragraphs are used to achieve fine-grained separation of the steps.
     \end{itemize}
-    \paragraph{Second step}
+
+    \textbf{Second step}
     and so on.
+
     \paragraph{conclusion}
     This is the conclusion of the recipe. It should summarize the steps and provide a final overview of the process.
 \end{KR} 
@@ -266,7 +273,7 @@ This is a formula. This should be used for very important formulas and concepts 
 
 \subsection{Code Blocks}
 
-\begin{code}{Code Title}\\
+\begin{code}{Code Title}
     This is a code block, where general concepts are explained.
 \begin{lstlisting}[language=Java, style=basesmol]
 // Indentation matters in these blocks, so all the way to the left!
@@ -289,7 +296,7 @@ int example_function(int param1, int param2) {
     Within the lstlisting environment letters like ä, ö, ü, ß and any other special characters are not supported!
 \end{code}
 
-\begin{examplecode}{Example Code Title}\\
+\begin{examplecode}{Example Code Title}
     This is an example code block. This should show specific implementations or examples.
 \begin{lstlisting}[language=Python, style=basesmol]
 # Indentation matters in these blocks, so all the way to the left!
