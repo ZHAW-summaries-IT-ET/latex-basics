@@ -15,17 +15,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english, ngerman]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{iftex}
 
 \newcommand{\oq}{«}
 \newcommand{\cq}{»}
 
 %"normal" text font:
 \usepackage{lmodern} 
-% hehe emojis (LuaTeX only)
-\ifluatex
-  \usepackage{emoji}
-\fi
 
 %for code snippets use this:
 %{\fontfamily{cmtt}\selectfont "code you want in different font" }
@@ -226,7 +221,7 @@
 \definecolor{section}{HTML}{ADADAD} %pastelgrey
 \definecolor{subsection}{HTML}{8F8F8F} %grey
 \definecolor{subsubsection}{HTML}{A3A3A3} %lightgrey
-\definecolor{paragraph}{HTML}{CCCCCC} %babygrey
+\definecolor{paragraph}{HTML}{7A7A7A} %darkpinkdarkgrey
 
 %customise headers & titles:
 \newcommand{\raisedrulefill}[2][0ex]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
@@ -325,6 +320,7 @@
 \newcommand{\parenth}[2]{\ifstrequal{#1}{normal}{( #2 )}{\ifstrequal{#1}{dynamic}{\left( #2\right)}{\wrongArg}}}
 \renewcommand{\brackets}[2]{\ifstrequal{#1}{normal}{[ #2 ]}{\ifstrequal{#1}{dynamic}{\left[ #2\right]}{\wrongArg}}}
 \newcommand{\important}[1]{\textcolor{pink}{\textbf{#1}}}
+\newcommand{\solution}[1]{\textcolor{darktangerine}{\textbf{#1}}}
 
 %defining math symbols:
 \DeclareMathSymbol{\mlq}{\mathrel}{operators}{``}
